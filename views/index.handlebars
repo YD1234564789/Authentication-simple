@@ -1,4 +1,4 @@
-<div class="container d-flex" style="height: 600px">
+
   <div class="col-4 mx-auto my-auto d-flex justify-content-center">
     <form action="/login" method="POST">
       <h2 class="">Account Login</h2>
@@ -11,7 +11,9 @@
         <label for="exampleInputPassword1" class="form-label">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" name="password">
       </div>
+      {{#if errorMeg }}
+      <div style="color: red">{{errorMeg}}</div>
+      {{/if}}
       <button type="submit" class="btn btn-primary ">Submit</button>
     </form>
   </div>
-</div>
